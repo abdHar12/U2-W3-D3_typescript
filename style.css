@@ -1,0 +1,15 @@
+button {
+  display: block;
+  margin-inline: auto;
+}
+h1 {
+  text-align: center;
+}
+form {
+  width: 500px;
+  margin-inline: auto;
+  text-align: center;
+}
+form div {
+  margin-bottom: 1rem;
+}

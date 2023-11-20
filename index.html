@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Prova ad indovinare il numero:</h1>
+    <form>
+      <div>
+        <label for="stPlayer">Primo giocatore: </label>
+        <input id="stPlayer" type="number" required />
+      </div>
+      <div>
+        <label for="ndPlayer">Secondo giocatore: </label>
+        <input id="ndPlayer" type="number" required />
+      </div>
+      <button type="submit">Confermare i due numeri</button>
+    </form>
+    <h3>Il numero estratto è: <span></span></h3>
+    <h3 id="result">Risultato: <span></span></h3>
+    <script src="./ranNum.js"></script>
+  </body>
+</html>
