@@ -3,13 +3,13 @@ form.addEventListener("submit", function (e) {
     e.preventDefault();
     var input1 = document.getElementById("stPlayer");
     var input2 = document.getElementById("ndPlayer");
-    var responsePlayer1 = parseInt(input1.value);
-    var responsePlayer2 = parseInt(input2.value);
-    //   const randomNum: number = Math.ceil(Math.random() * 100);
-    var randomNum = 55;
+    var responsePlayer1 = parseInt(input1 === null || input1 === void 0 ? void 0 : input1.value);
+    var responsePlayer2 = parseInt(input2 === null || input2 === void 0 ? void 0 : input2.value);
+    var randomNum = Math.ceil(Math.random() * 100);
+    // const randomNum: number = 55;
     var randomNumEl = document.querySelector("h3>span");
     var resultEl = document.querySelector("#result>span");
-    randomNumEl.innerText = randomNum;
+    randomNumEl.innerText = randomNum.toString();
     console.log(typeof responsePlayer1);
     console.log(typeof randomNum);
     console.log(Math.abs(responsePlayer1 - randomNum));
